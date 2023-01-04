@@ -1,0 +1,9 @@
+<canvas baseChart class="chart"
+        [data]="radarChartData"
+        [options]="radarChartOptions"
+        [type]="radarChartType">
+        (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)">
+</canvas>
+
+<button class="btn ntn-sm btn-outline-success " (click)="random()">Random</button>
